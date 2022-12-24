@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form">
+            <h2 style="color: rgb(248, 77, 24)">Generate a random password</h2>
+           <div class="text-div">
+                <div class="password-input" id="password">praveen kanth</div>
+                <button onclick="copyText()" class="copy-text-btn">Copy text</button>
+           </div>
+            <div class="password-length">
+                <p>Password Length:</p>
+                <div class="length-input">
+                    <input type="range" min="6" max="20" id="password-length-input">
+                    <h2 id="password-length-value">13</h2>
+               </div>
+            </div>
+            <div class="capital-letter include-div">
+                <h3 id="">Include capital letter</h3>
+                <div class="check-box">
+                    <input type="checkbox" id="capital-checkbox">
+                    <label for="capital-checkbox"></label>
+                </div>
+            </div>
+            <div class="numbers include-div">
+                <h3 id="">Include number</h3>
+                <div class="check-box">
+                    <input type="checkbox" id="number-checkbox">
+                    <label for="number-checkbox"></label>
+                </div>
+            </div>
+            <div class="symbols include-div">
+                <h3 id="">Include symbols</h3>
+                <div class="check-box">
+                    <input type="checkbox" id="symbol-checkbox">
+                    <label for="symbol-checkbox"></label>
+                </div>
+            </div>
+            <button onclick="generatePassword()" class="password-btn">Generate Password</button>
+        </div>
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
+<!-- 
+<div class="check-box">
+    <input type="checkbox" id="check-box-2">
+    <label for="check-box-2" id="check-box-1"></label>
+</div> -->
